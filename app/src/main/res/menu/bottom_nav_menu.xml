@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_calls"
+        android:icon="@drawable/ic_call"
+        android:title="Calls" />
+    <item
+        android:id="@+id/navigation_messages"
+        android:icon="@drawable/ic_message"
+        android:title="Messages" />
+
+    <item
+        android:id="@+id/empty"
+        android:enabled="false"
+        android:icon="@android:color/transparent"
+        android:title=""
+        android:visible="true" />
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/ic_contact"
+        android:title="Contacts" />
+    <item
+        android:id="@+id/navigation_voicemail"
+        android:icon="@drawable/ic_voicemail"
+        android:title="Voicemail" />
+</menu>
