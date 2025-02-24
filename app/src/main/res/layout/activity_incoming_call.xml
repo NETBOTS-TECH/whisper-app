@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/callerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="John Doe"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/callerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="+1 234 567 890"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/acceptCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/green"
+        android:padding="16dp"
+        android:text="Accept"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/rejectCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red"
+        android:padding="16dp"
+        android:text="Reject"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/endCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/red"
+        android:padding="16dp"
+        android:text="End Call"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />  <!-- Initially Hidden -->
+</LinearLayout>
