@@ -1,4 +1,4 @@
-package com.example.truecaller.fragments.callsSection
+package com.example.truecaller.fragments.callsSection.subFragments
 
 import CallAdapter
 import CallViewModel

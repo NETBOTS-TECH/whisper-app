@@ -7,8 +7,12 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
+
         mavenCentral()
         gradlePluginPortal()
+        maven { url = uri("https://raw.githubusercontent.com/alexgreench/google-webrtc/master") }
+
+
     }
 }
 dependencyResolutionManagement {
@@ -16,6 +20,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://raw.githubusercontent.com/alexgreench/google-webrtc/master") }
+
     }
 }
 

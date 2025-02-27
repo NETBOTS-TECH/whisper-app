@@ -56,4 +56,8 @@ dependencies {
     implementation(libs.intuit.ssp)
     implementation(libs.intuit.sdp)
     implementation(libs.shimmer)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.socket.io.client)
+    implementation(libs.google.webrtc)
+    implementation(libs.okhttp)
 }

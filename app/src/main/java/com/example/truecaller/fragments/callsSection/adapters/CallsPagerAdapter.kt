@@ -1,13 +1,13 @@
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.truecaller.fragments.callsSection.AllFragment
-import com.example.truecaller.fragments.callsSection.PrimaryFragment
-import com.example.truecaller.fragments.callsSection.PromoFragment
-import com.example.truecaller.fragments.callsSection.SpamFragment
+import com.example.truecaller.fragments.callsSection.subFragments.AllFragment
+import com.example.truecaller.fragments.callsSection.subFragments.PrimaryFragment
+import com.example.truecaller.fragments.callsSection.subFragments.PromoFragment
+import com.example.truecaller.fragments.callsSection.subFragments.SpamFragment
 
 class CallsPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
-    override fun getItemCount(): Int = 4 // Number of tabs
+    override fun getItemCount(): Int = 4
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {

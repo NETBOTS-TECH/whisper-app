@@ -17,6 +17,8 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 
+
+
     <include
         layout="@layout/home_bottom_center_button"
         android:layout_width="wrap_content"

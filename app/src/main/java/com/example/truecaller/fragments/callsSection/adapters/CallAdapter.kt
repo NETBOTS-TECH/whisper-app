@@ -1,3 +1,4 @@
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,8 +26,19 @@ class CallAdapter(private val calls: List<Call>) :
     class CallViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val phoneNumber: TextView = itemView.findViewById(R.id.phoneNumber)
         private val timestamp: TextView = itemView.findViewById(R.id.timestamp)
+        private val iconText: TextView = itemView.findViewById(R.id.iconText)
 
         fun bind(call: Call) {
+            if (call.tag == "Spam") {
+                phoneNumber.setTextColor(Color.RED)
+                timestamp.setTextColor(Color.RED)
+                iconText.text = "S"
+                iconText.setBackgroundResource(R.drawable.fab_bg_red)
+            } else if (call.tag == "Promo") {
+                iconText.text = "P"
+
+            }
+
             phoneNumber.text = call.phoneNumber
             timestamp.text =
                 SimpleDateFormat("HH:mm", Locale.getDefault()).format(call.timestamp)

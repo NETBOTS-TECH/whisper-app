@@ -1,4 +1,4 @@
-package com.example.truecaller.fragments.callsSection
+package com.example.truecaller.fragments.callsSection.subFragments
 
 import CallAdapter
 import CallViewModel
@@ -12,15 +12,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.truecaller.R
 
-
-class SpamFragment : Fragment() {
+class PromoFragment : Fragment() {
     private lateinit var viewModel: CallViewModel
     private lateinit var adapter: CallAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-         val view = inflater.inflate(R.layout.fragment_spam, container, false)
+         val view = inflater.inflate(R.layout.fragment_promo, container, false)
 
         viewModel = ViewModelProvider(requireActivity()).get(CallViewModel::class.java)
 
@@ -29,11 +28,11 @@ class SpamFragment : Fragment() {
         adapter = CallAdapter(emptyList())
         recyclerView.adapter = adapter
 
-        viewModel.spamCalls.observe(viewLifecycleOwner) { calls ->
+        viewModel.promoCalls.observe(viewLifecycleOwner) { calls ->
             adapter = CallAdapter(calls)
             recyclerView.adapter = adapter
         }
-        return view
+        return view;
     }
 
 }
