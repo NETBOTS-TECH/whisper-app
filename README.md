@@ -39,7 +39,7 @@ This repository contains the Kotlin-based user interface for the WhisperWize AI-
 -   Run the following command:
 
     ```bash
-    git clone <repository_url>
+    git clone <(https://github.com/NETBOTS-TECH/whisper-app)>
     ```
 
 **3. Open in Android Studio:**
@@ -60,7 +60,7 @@ This repository contains the Kotlin-based user interface for the WhisperWize AI-
     ```kotlin
     // Constants.kt
     object Constants {
-        const val BACKEND_URL = "ws://your_backend_ip:3000" // Replace with your backend URL
+        const val BACKEND_URL = "ws://(https://whisper-backend-8aqk.onrender.com)" 
     }
     ```
 
